@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700|Montserrat:100,200,300,400,500,600,700|Righteous:100,200,300,400,500,600,700');
+
 
 
 /*------------------General Styles -----------------------*/
 
-html {
-    font-family: "Roboto";
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
 }
+
+
 
 /*------------------Landing Page Styles -----------------------*/
 
@@ -155,10 +159,10 @@ header {
 
 @media(min-width: 768px) {
     .landing-side-images .top-image {
-        height: 75vh;
+        height: 70vh;
     }
     .landing-side-images .bottom-image {
-        height: 25vh;
+        height: 30vh;
     }
     .large-carousel {
         height: 100vh;
@@ -211,18 +215,85 @@ header {
 
 
 
-/*------------------ Styles -----------------------*/
+/*---------------About Styles --------------------*/
 
-/*---------------Test Styles (to be removed on deployment) --------------------*/
-
-.test1 {
+.about-info {
     width: 100%;
     height: 400px;
-    background-color: orange;
+    font-size: 1rem;
+    line-height: 1.58824;
+    color: #858586;
+    margin: 50px 10px 20px;
 }
 
-.test1 {
+.about-info div {
     width: 100%;
-    height: 400px;
-    background-color: orange;
+    margin-bottom: 10px;
+}
+
+
+.about-info p {
+    display: inline;
+}
+
+.about-info strong {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #000;
+}
+
+/*----------------------Media Queries for About-------------------*/
+
+@media(min-width: 768px) {
+    .about-info {
+        font-size: 1.2rem;
+        margin: 50px 30px 20px;
+    }
+    .about-info div {
+        padding: 0 60px;
+    }
+}
+
+@media(min-width: 1025px) {
+    .about-info {
+        margin: 80px 30px 20px;
+    }
+    .about-info div {
+        padding: 0 70px;
+    }
+}
+
+/*---------------Affiliates Styles --------------------*/
+
+.affiliates div {
+    text-align: center;
+}
+
+.affiliates div div {
+   margin: 20px 0;
+}
+.affiliates h2 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+}
+
+.affiliates h2:first-of-type {
+    font-family: Montserrat, sans-serif;
+}
+
+
+.affiliates .lowercase {
+    text-transform: lowercase;
+}
+
+.affiliates .lowercase:first-of-type {
+    font-family: Righteous, sans-serif;
+}
+
+
+.affiliates h3 {
+    font-size: 1.0625rem;
+    line-height: 1.58824;
+    color: #858586;
 }
