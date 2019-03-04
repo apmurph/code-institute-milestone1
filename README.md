@@ -4,7 +4,7 @@
 Hi there! Welcome to my User Centric Frontend Development Milestone Project!
 
 This appliclation is built using a bootstrap framework and a sprinkle of 
-personal css styling!
+personal css styling! This is a mobile-first development project!
 
 The design is  adopted from the award winning fashion website: 
 
