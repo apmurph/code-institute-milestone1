@@ -194,9 +194,9 @@ header {
 
 /*----------------------Media Queries for landing page-------------------*/
 
-@media(min-width: 768px) {
+@media(min-width: 411px) {
     .landing-side-images .top-image {
-        height: 70vh;
+        height: 30vh;
     }
 
     .landing-side-images .bottom-image {
@@ -204,9 +204,11 @@ header {
     }
 
     .large-carousel {
-        height: 100vh;
+        height: 70vh;
     }
+}
 
+@media(min-width: 768px) {
     .navbar .navbar-nav .nav-link {
         padding-left: 20px;
     }
@@ -222,13 +224,23 @@ header {
     }
 
     .landing-info {
-        top: 150px;
+        top: 25%;
     }
 
 }
 
-@media(min-width: 950px) {
+@media(min-width: 1025px) {
+    .landing-side-images .top-image {
+        height: 70vh;
+    }
 
+    .landing-side-images .bottom-image {
+        height: 30vh;
+    }
+
+    .large-carousel {
+        height: 100vh;
+    }
     .navbar-customise {
         padding-left: 110px;
     }
