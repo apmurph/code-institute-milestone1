@@ -330,20 +330,20 @@ header {
     color: #858586;
 }
 
-/*---------------Market and Brand Styles --------------------*/
+/*---------------Main Content Styles --------------------*/
 
-.markets, .brands {
+.main-content {
     margin: 5% auto;
     position: relative;
 
 }
 
-.market-brand-details {
+.main-content-styles {
     padding: 10% 5%;
     position: relative;
 }
 
-.market-brand-details span {
+.main-content-styles span {
     position: absolute;
     font-size: 4rem;
     font-weight: 800;
@@ -353,47 +353,59 @@ header {
     right: 10%;
 }
 
-.market-brand-details h2 {
+.main-content-styles .news-header {
+    top: -3%;
+}
+
+.main-content-styles h2 {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -1px;
 }
 
-.market-brand-details p {
+.main-content-styles p {
     font-size: 1.0625rem;
     line-height: 1.58824;
     color: #858586;
 }
 
 
-/*----------------------Media Queries for Markets and Brands-------------------*/
+/*----------------------Media Queries for Main Content-------------------*/
+
+@media(min-width: 768px) {
+    .main-content-styles span {
+        font-size: 9rem;
+        top: -16%;
+    }
+
+    .main-content-styles .news-header {
+        top: -6%;
+    }
+
+    .main-content-styles h2 {
+        font-size: 3rem;
+    }
+}
+
+@media(min-width: 1025px) {
+    .main-content-styles span {
+        font-size: 8rem;
+        right: 50%;
+    }
+
+    .main-content-styles h2 {
+        padding-right: 30%;
+    }
+}
+
+/*---------------Market Styles --------------------*/
 
 @media(min-width: 768px) {
     .market-details {
         background: url("assets/images/mapOfEarth.jpg") no-repeat right top;
         background-size: 75%;
     }
-
-    .market-brand-details span {
-        font-size: 9rem;
-        top: -16%;
-    }
-
-    .market-brand-details h2 {
-        font-size: 3rem;
-    }
 }
-
-@media(min-width: 1025px) {
-        .market-brand-details span {
-        font-size: 8rem;
-        right: 50%;
-    }
-    .market-brand-details h2 {
-        padding-right: 30%;
-    }
-}
-
 
 /*---------------Brand Styles --------------------*/
 
@@ -404,13 +416,57 @@ header {
     background-size: contain;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1025px) {
     .brand-image {
-    height: 60vh;
+        height: 60vh;
+        background-size: contain;
+    }
+
+}
+
+/*----------------News Styles -----------------------*/
+
+.new-article {
+    margin-bottom: 5%;
+}
+
+.news-image {
+    width: 100%;
+    height: 34vh;
     background-size: contain;
 }
 
+.news-image-article1 {
+    background: url(assets/images/new-image-article1.jpg) no-repeat top;
 }
+
+.news-image-article2 {
+    background: url(assets/images/new-image-article2.jpg) no-repeat top;
+}
+
+.news-image-article3 {
+    background: url(assets/images/new-image-article3.jpg) no-repeat top;
+}
+
+.news-image-article4 {
+    background: url(assets/images/news-image-article4.jpg) no-repeat top;
+}
+
+@media(min-width: 768px) {
+    .news-image {
+        height: 28vh;
+        background-size: contain;
+    }
+
+}
+@media(min-width: 1025px) {
+    .news-image {
+        height: 60vh;
+        background-size: contain;
+    }
+
+}
+
 
 /*---------------Footer Styles --------------------*/
 
