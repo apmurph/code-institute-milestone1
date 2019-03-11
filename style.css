@@ -5,51 +5,69 @@
 /*------------------General Styles -----------------------*/
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
+
+
 
 .relative {
     position: relative;
 }
 
+.anchor-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    padding: 18px 30px;
+    transition: 1s;
+}
+
+.anchor-button-dark {
+    color: #000;
+    border: 1px solid  rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.anchor-button:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
 /*------------------Logo Styles -----------------------*/
 
-.navbar-brand,
+.isit-logo,
 .footer-logo {
     width: 200px;
     padding: 0 0;
     display: flex;
     flex-direction: row;
-    max-height: 75px;
 }
 
-.navbar-brand .logo,
-.footer-logo .logo {
+.logo-image {
     color: white;
     text-align: center;
     font-size: 4rem;
-    font-family: "Roboto";
     font-weight: 700;
 }
 
-.navbar-brand .logo-text,
-.footer-logo .logo-text {
+.logo-text {
     color: white;
     font-size: 1rem;
-    font-family: "Roboto";
     text-transform: uppercase;
     font-weight: 400;
     padding-top: 19px;
     padding-left: 5px;
 }
 
-.navbar-brand .logo-text span,
-.footer-logo .logo-text span {
+.logo-text span {
     height: 17px;
 }
 
-.navbar-brand div span,
+.isit-logo div span,
 .footer-logo div span {
     display: block;
 }
@@ -63,17 +81,15 @@ header {
 
 .navbar-customise {
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     right: 0;
     top: 20px;
     width: 100%;
-    padding-right: 0;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.navbar-brand {
-    margin-right: 55px;
-}
 
 .navbar .nav-button-customise {
     color: #fff;
@@ -81,22 +97,34 @@ header {
     height: 57px;
     border-right: 0px;
     border-radius: 0px;
+    margin-right: 5%;
+}
+
+.navbar .navbar-nav {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
 }
 
 .navbar .navbar-nav .nav-link {
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
-    font-family: "Roboto";
     font-weight: 400;
 }
 
+.isit-logo {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+}
 
 .landing-info {
     position: absolute;
-    top: 250px;
-    left: 30px;
-    z-index: 100;
+    top: 30%;
+    left: 10%;
+    z-index: 10;
     color: #fff;
 }
 
@@ -114,18 +142,6 @@ header {
     opacity: 0;
 }
 
-.mission {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    display: inline-block;
-    padding: 18px 30px;
-}
-
-.mission:hover {
-    text-decoration: none;
-    color: #fff;
-}
 
 .landing-images {
     position: relative;
@@ -180,17 +196,7 @@ header {
     .large-carousel {
         height: 100vh;
     }
-    .navbar-brand {
-        margin-right: 180px;
-    }
-    .navbar-brand .logo {
-        padding: 0 10px;
-    }
-    .navbar-brand .logo-text {
-        font-size: 0.7rem;
-        font-weight: 300;
-        letter-spacing: 4px;
-    }
+
     .navbar .navbar-nav .nav-link {
         padding-left: 20px;
     }
@@ -215,6 +221,9 @@ header {
 
     .navbar-customise {
         padding-left: 110px;
+    }
+    .navbar .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     .landing-images .landing-info {
@@ -292,17 +301,12 @@ header {
     padding-bottom: 20px;
 }
 
-.affiliates h2:first-of-type {
-    font-family: Montserrat, sans-serif;
+.zalora-style {
+    font-family: "Montserrat", sans-serif;
 }
 
-
-.affiliates .lowercase {
-    text-transform: lowercase;
-}
-
-.affiliates .lowercase:first-of-type {
-    font-family: Righteous, sans-serif;
+.dafiti-style {
+    font-family: "Righteous", sans-serif;
 }
 
 
@@ -312,6 +316,40 @@ header {
     color: #858586;
 }
 
+/*---------------Market Styles --------------------*/
+
+.markets {
+    margin: 5% auto;
+    position: relative;
+
+}
+
+.market-details {
+    padding: 10% 5%;
+    position: relative;
+    background: url("assets/images/mapOfEarth.jpg") no-repeat right top;
+    background-size: 75%;
+}
+
+.market-details span {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 5%;
+    opacity: 0.2;
+    top: 0;
+    right: 10%;
+}
+
+.market-details h2 {
+    font-size: 3rem;
+}
+
+.market-details p {
+    font-size: 1.0625rem;
+    line-height: 1.58824;
+    color: #858586;
+}
 
 /*---------------Footer Styles --------------------*/
 
@@ -323,11 +361,11 @@ footer {
     font-size: .8125rem;
 }
 
-#footer-details {
+.footer-details {
     margin: 10px 20px;
 }
 
-#footer-details>div {
+.footer-details>div {
     margin-bottom: 30px;
 }
 
@@ -359,12 +397,12 @@ footer .footer-titles {
     padding-right: 5px;
 }
 
-#social-links {
+.social-links {
     display: flex;
     flex-direction: row;
 }
 
-#social-links a {
+.social-links a {
     text-decoration: none;
     font-size: 0.8rem;
     color: #fff;
@@ -377,7 +415,7 @@ footer .footer-titles {
 /*----------------------Media Queries for footer-------------------*/
 
 @media(min-width: 768px) {
-    #footer-details div:nth-of-type(2) {
+    .footer-affiliate-details {
         margin: 0 40px;
     }
 
