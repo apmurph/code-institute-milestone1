@@ -9,11 +9,11 @@
 
 ************************************************************************* 
 
-************** Isit Global Fashion Design ******************************* 
+************** Isit Global Fashion Design Website *********************** 
+
+************* https://apmurph.github.io/isit-fashion/ ******************* 
 
 ************************************************************************* 
-
-  
 
   
 
@@ -28,12 +28,14 @@ personal css styling! It is designed as a mobile-first development project!
   
 
   
+TECH STACK
 
-  
+HTML5 -- CSS and Bootstrap -- Javascript and jquery
+
+
+
 
 UXD 
-
-  
 
 The Strategy.. 
 
@@ -242,8 +244,16 @@ button returns to the landing content. This will return a confirmation notificat
 after the next upgrade.  
 
   
+----------------------------------------------------------------------------- 
 
-  
+Development..
+
+This application was developed using the git content tracker control system
+
+Deployment..
+
+This application was deployed to github and published using github Pages at:
+https://apmurph.github.io/isit-fashion/
 
 ----------------------------------------------------------------------------- 
 
